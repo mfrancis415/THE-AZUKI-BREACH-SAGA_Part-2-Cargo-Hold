@@ -13,14 +13,16 @@ Organization: Azuki Import/Export (梓貿易株式会社)
 Situation: After establishing initial access on November 19th, the attacker returned approximately 72 hours later. During the return session, suspicious lateral movement and large data transfers were observed overnight on a file server.
 
 Primary Target:
-azuki-fileserver01
+` azuki-fileserver01`
 
 Evidence Source:
-Microsoft Defender for Endpoint logs 
+` Microsoft Defender for Endpoint logs `
 
 ## Query Starting Point:
+```
 DeviceLogonEvents
-| where DeviceName contains "azuki" 
+| where DeviceName contains "azuki"
+```
 
 ## Tools Used
 - Microsoft Defender for Endpoint (Advanced Hunting)
